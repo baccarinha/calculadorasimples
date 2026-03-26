@@ -5,17 +5,23 @@
     <title>Calculadora</title>
 
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
+       body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* IMPORTANTE */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9ae6, #7aa8ff);
+}
 
-            /* Gradiente rosa e azul */
-            background: linear-gradient(135deg, #ff9ae6, #7aa8ff);
-        }
+/* Faz o conteúdo ocupar o espaço disponível */
+.container {
+    flex: 1;
+}
+
+/* Estilo do rodapé */
 footer {
     width: 100%;
     text-align: center;
